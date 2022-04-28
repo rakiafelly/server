@@ -1,0 +1,12 @@
+<form  *ngIf="addUserForm" [formGroup]="addUserForm" (ngSubmit)="update()">
+    <label>id:</label>
+    <input type="number" formControlName="id" ><br>
+    <label>name:</label>
+    <input type="text" id="name" formControlName="name" ><br>
+    <label>surname:</label>
+    <input type="text" id="surname" formControlName="username" ><br>
+    <label>email:</label>
+    <input type="email" id="email" formControlName="email" ><br>
+    <button type="submit">modify</button>
+    <button type="button" [routerLink]="['/users']" >Back</button>
+</form>
